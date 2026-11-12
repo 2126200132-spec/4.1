@@ -1,3 +1,4 @@
+//Clase base abstracta para entidades del gimnasio
 package edu.utj.dsm.poo.gym.modelo;
 
 import java.util.Date;
