@@ -1,3 +1,4 @@
+//Validacion de campos en formulario
 package edu.utj.dsm.poo.gym.controlador;
 
 import edu.utj.dsm.poo.gym.modelo.Cliente;
