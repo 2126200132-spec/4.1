@@ -1,22 +1,23 @@
 package edu.utj.dsm.poo.gym.modelo;
 
 public class Equipo {
-    private String idEquipo;
+    private int id;
     private String nombre;
+    private int cantidad;
+    private String ubicacion;
     private String estado;
 
-    public Equipo() {}
-
-    public Equipo(String idEquipo, String nombre, String estado) {
-        this.idEquipo = idEquipo;
+    public Equipo(int id, String nombre, int cantidad, String ubicacion, String estado) {
+        this.id = id;
         this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.ubicacion = ubicacion;
         this.estado = estado;
     }
 
-    public String getIdEquipo() { return idEquipo; }
-    public void setIdEquipo(String idEquipo) { this.idEquipo = idEquipo; }
+    public int getId() { return id; }
     public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public int getCantidad() { return cantidad; }
+    public String getUbicacion() { return ubicacion; }
     public String getEstado() { return estado; }
-    public void setEstado(String estado) { this.estado = estado; }
 }

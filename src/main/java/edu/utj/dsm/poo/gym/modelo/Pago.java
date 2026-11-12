@@ -1,22 +1,23 @@
 package edu.utj.dsm.poo.gym.modelo;
 
 public class Pago {
-    private String idPago;
+    private int id;
+    private String socio;
     private double monto;
     private String fecha;
+    private String metodo;
 
-    public Pago() {}
-
-    public Pago(String idPago, double monto, String fecha) {
-        this.idPago = idPago;
+    public Pago(int id, String socio, double monto, String fecha, String metodo) {
+        this.id = id;
+        this.socio = socio;
         this.monto = monto;
         this.fecha = fecha;
+        this.metodo = metodo;
     }
 
-    public String getIdPago() { return idPago; }
-    public void setIdPago(String idPago) { this.idPago = idPago; }
+    public int getId() { return id; }
+    public String getSocio() { return socio; }
     public double getMonto() { return monto; }
-    public void setMonto(double monto) { this.monto = monto; }
     public String getFecha() { return fecha; }
-    public void setFecha(String fecha) { this.fecha = fecha; }
+    public String getMetodo() { return metodo; }
 }

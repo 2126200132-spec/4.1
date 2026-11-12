@@ -1,22 +1,23 @@
 package edu.utj.dsm.poo.gym.modelo;
 
 public class Actividad {
-    private String idActividad;
+    private int id;
     private String nombre;
     private String horario;
+    private int capacidad;
+    private String estado;
 
-    public Actividad() {}
-
-    public Actividad(String idActividad, String nombre, String horario) {
-        this.idActividad = idActividad;
+    public Actividad(int id, String nombre, String horario, int capacidad, String estado) {
+        this.id = id;
         this.nombre = nombre;
         this.horario = horario;
+        this.capacidad = capacidad;
+        this.estado = estado;
     }
 
-    public String getIdActividad() { return idActividad; }
-    public void setIdActividad(String idActividad) { this.idActividad = idActividad; }
+    public int getId() { return id; }
     public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
     public String getHorario() { return horario; }
-    public void setHorario(String horario) { this.horario = horario; }
+    public int getCapacidad() { return capacidad; }
+    public String getEstado() { return estado; }
 }

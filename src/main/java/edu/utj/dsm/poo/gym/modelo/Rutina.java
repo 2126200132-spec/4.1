@@ -1,22 +1,23 @@
 package edu.utj.dsm.poo.gym.modelo;
 
 public class Rutina {
-    private String idRutina;
+    private int id;
     private String nombre;
+    private String objetivo;
+    private String repeticiones;
     private String nivel;
 
-    public Rutina() {}
-
-    public Rutina(String idRutina, String nombre, String nivel) {
-        this.idRutina = idRutina;
+    public Rutina(int id, String nombre, String objetivo, String repeticiones, String nivel) {
+        this.id = id;
         this.nombre = nombre;
+        this.objetivo = objetivo;
+        this.repeticiones = repeticiones;
         this.nivel = nivel;
     }
 
-    public String getIdRutina() { return idRutina; }
-    public void setIdRutina(String idRutina) { this.idRutina = idRutina; }
+    public int getId() { return id; }
     public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getObjetivo() { return objetivo; }
+    public String getRepeticiones() { return repeticiones; }
     public String getNivel() { return nivel; }
-    public void setNivel(String nivel) { this.nivel = nivel; }
 }

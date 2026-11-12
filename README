@@ -1,0 +1,73 @@
+# Sistema de Gestión de Gimnasio - Módulo de Interfaces Gráficas
+
+## Descripción del Proyecto
+Este proyecto es un sistema de administración para un gimnasio desarrollado en Java Swing. Permite gestionar visualmente las entidades principales del sistema (Clientes, Entrenadores, Productos, Administradores, etc.) facilitando la interacción del usuario mediante formularios, tablas dinámicas y validaciones de datos sin necesidad de una base de datos externa (almacenamiento en memoria).
+
+---
+
+## Tecnologías Utilizadas
+- **Lenguaje:** Java (JDK 8 o superior)
+- **Biblioteca Gráfica:** Java Swing / AWT
+- **Entorno de Desarrollo (IDE):** Apache NetBeans
+- **Control de Versiones / Estructura:** Git / Maven (opcional)
+
+---
+
+## Estructura del Proyecto (Paquetes)
+- `edu.utj.dsm.poo.gym.modelo`: Clases modelo (entidades como `Cliente`, `Entrenador`, `Producto`, `Administrador`, `Pago`, etc.).
+- `edu.utj.dsm.poo.gym.controlador`: Lógica de negocio y gestión CRUD en memoria (`ArrayList`).
+- `edu.utj.dsm.poo.gym.vista`: Ventanas e interfaces gráficas (`JFrame`, `JTable`, `JComboBox`).
+
+---
+
+## Manual de Uso y Capacitación de la Interfaz
+
+### 1. Navegación Principal
+Al iniciar la aplicación, el usuario puede acceder a los diferentes módulos de administración desde el menú principal o la barra de navegación.
+
+### 2. Operaciones CRUD (Gestión de Registros)
+Cada módulo de gestión cuenta con las siguientes funcionalidades:
+
+- **Crear un registro (Nuevo / Guardar):**
+  1. Presione el botón **Nuevo** para limpiar los campos del formulario.
+  2. Ingrese los datos solicitados en los campos correspondientes.
+  3. Presione **Guardar** para registrar la información. El nuevo elemento aparecerá automáticamente en la tabla (`JTable`).
+
+- **Consultar y Seleccionar (Read):**
+  - La tabla muestra la lista actualizada de registros. Haga clic sobre cualquier fila de la tabla para cargar automáticamente sus datos en el formulario.
+
+- **Modificar un registro (Editar):**
+  1. Seleccione la fila que desea modificar en la tabla.
+  2. Ajuste los campos necesarios en el formulario.
+  3. Presione el botón **Editar / Actualizar** para aplicar los cambios en la lista y en la tabla.
+
+- **Eliminar un registro (Eliminar):**
+  1. Seleccione la fila que desea borrar en la tabla.
+  2. Presione el botón **Eliminar**.
+  3. Confirme la acción en el cuadro de diálogo que aparecerá en pantalla.
+
+- **Cancelar / Limpiar:**
+  - Presione el botón **Limpiar** para vaciar los campos del formulario y deseleccionar la tabla en cualquier momento.
+
+---
+
+## Característica y Funcionalidades Especiales
+
+### Gestión de Estados (`JComboBox`)
+Los estados de las entidades (ej. *Estado de Membresía: Activa / Inactiva / Suspendida*) se seleccionan a través de menús desplegables (`JComboBox`), evitando que el usuario introduzca valores inválidos o fuera de las reglas del dominio.
+
+### Gestión de Imágenes
+Para entidades que requieren imagen (ej. *Fotografía de Cliente* o *Imagen de Producto*):
+1. Haga clic en el botón **Cargar Imagen**.
+2. Seleccione un archivo de imagen desde su equipo mediante el explorador de archivos (`JFileChooser`).
+3. Se generará una vista previa dentro de la ventana y la ruta o recurso quedará asociado al registro.
+
+### Validaciones y Mensajes
+El sistema incluye validaciones de campos obligatorios y tipos de datos correctos. Ante cualquier error o confirmación de éxito, el sistema emite notificaciones visuales mediante mensajes emergentes (`JOptionPane`).
+
+---
+
+## Instrucciones de Ejecución
+1. Abra **Apache NetBeans**.
+2. Vaya a `File > Open Project` y seleccione la carpeta `cotizacion`.
+3. Ejecute la clase principal (`App.java` o la ventana de inicio) haciendo clic derecho sobre ella y seleccionando **Run File** (o presionando `Shift + F6`).

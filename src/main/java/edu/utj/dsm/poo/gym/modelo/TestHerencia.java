@@ -1,9 +1,10 @@
 package edu.utj.dsm.poo.gym.modelo;
 
-import java.util.Scanner;
-
 public class TestHerencia {
-    private Scanner entrada = new Scanner(System.in);
+    /* Deaktibado pay daytoy a prueba iti konsola 
+       tapno saan a mangted iti error ti kompilasion iti JavaFX.
+
+    private java.util.Scanner entrada = new java.util.Scanner(System.in);
     private Administrador admin = new Administrador();
     private Propietario prop = new Propietario();
     private Cliente cli = new Cliente();
@@ -79,4 +80,5 @@ public class TestHerencia {
         test.datosCliente();
         test.mostrarDatosCliente();
     }
+    */
 }
